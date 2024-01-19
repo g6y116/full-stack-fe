@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     // /api/time 엔드포인트로 GET 요청을 보냄
-    axios.get('http://localhost:8080/api/time')
+    axios.get('/api/time')
       .then(response => {
         setCurrentTime(response.data);
       })
